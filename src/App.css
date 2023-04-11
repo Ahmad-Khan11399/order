@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+body{
+text-align: center;
+font-family: "McLaren", cursive;
 }
+.container {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+   min-height: 100vh;
+  background-image: url("./background.jpg");
+      background-position: center;
+    background-size: cover;
+  background-repeat: no-repeat;
+margin-top: 0;
 }
+.order{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-image: url("https://images.pexels.com/photos/5025664/pexels-photo-5025664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item{
+  color:#1F2D3D;
+  background-color: transparent;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ font-family: Arial, sans-serif;
+ max-width: 400px;
+ height: 100vh;
+ margin: auto;
+ align-items: center;
+ justify-content: flex-end;
+ margin-right: 80px;
+ height: 70%;
+}
+.big-heading{
+  font-size: 3rem;
+  color:#333333;
+}
+.profile-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+   color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.save{background-color: transparent;}
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.social-media-links {
+  list-style: none;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+}
+
+.social-media-links li {
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.social-media-links li a {
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.social-media-links li a:hover {
+  text-decoration: underline;
+  color:#333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  background-color: #333;
+  color: #009e4f;
+  display: inline;
+}
+.login {
+    height: 60vh;
+   backgroundColor: "transparent";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-left:60px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+input {
+  color: #333333;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background:#555;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
